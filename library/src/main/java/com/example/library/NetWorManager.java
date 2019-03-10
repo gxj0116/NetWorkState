@@ -57,4 +57,16 @@ public class NetWorManager {
         }
         return mApplication;
     }
+
+    public void registerReceiver(Object register) {
+        receiver.registerReceiver(register);
+    }
+
+    public void unregisterReceiver(Object register) {
+        receiver.unregisterReceiver(register);
+    }
+
+    public void unregisterAllReceiver() {
+        receiver.unregisterAllReceiver();
+    }
 }
